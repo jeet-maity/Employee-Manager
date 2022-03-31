@@ -8,9 +8,9 @@ Start with the entry point - [ConfigureIocContainer method in App.xaml.cs](Emplo
 
 Following functionalities have been implemented:
   1.  Search & Export - Opens in a separate search window with list view of search results.
-        After a successful search, the employee details are readily exportable to a file in tab separated format.
+        After a successful search, the employee details are readily exportable to a file in "|" separated csv file format with a preview.
         
-  2.  List overview & Export - Lists an overview of employee details readily exportable as a list of tab separated details, with a preview of exported information.
+  2.  List overview & Export - Lists an overview of employee details readily exportable as a list of "|" separated details in csv file format, with a preview of exported information.
         
   3.  WPF View (MVVM)
 
