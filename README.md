@@ -3,7 +3,7 @@
 A WPF desktop C# solution for managing Employees details.
 
 Please read the list of functionalities below, before diving into the code for the complete implementation. 
-Start with the entry point - App.xaml.cs
+Start with the entry point - [ConfigureIocContainer method in App.xaml.cs](EmployeeManager/App.xaml.cs)
 
 
 Following functionalities have been implemented:
