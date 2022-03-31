@@ -37,7 +37,7 @@
   <ItemGroup>
     <Compile Include="EmployeeRepository.cs" />
     <Compile Include="IEmployeeRepository.cs" />
-    <Compile Include="Mapper.cs" />
+    <Compile Include="ObjectRelationalMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
