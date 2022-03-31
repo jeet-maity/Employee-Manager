@@ -15,4 +15,4 @@ Following functionalities have been implemented:
   3.  WPF View (MVVM)
 
 ### Dependencies/Prerequisites
-Please install the Developer pack [.NET Framework net472](https://dotnet.microsoft.com/download/dotnet-framework/net472)
+Please install the Developer pack [.NET Framework net472](https://dotnet.microsoft.com/download/dotnet-framework/net472) and restore nuget packages of the solution file.
