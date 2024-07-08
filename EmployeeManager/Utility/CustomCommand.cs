@@ -3,6 +3,7 @@ using System.Windows.Input;
 
 namespace EmployeeManager.Utility
 {
+
     public class CustomCommand : ICommand
     {
         private readonly Action<object> execute;

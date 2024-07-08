@@ -1,4 +1,4 @@
-﻿namespace EmployeeManager.Services
+﻿namespace EmployeeManager.ViewServices
 {
     public interface IDialogService
     {

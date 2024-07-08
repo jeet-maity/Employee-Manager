@@ -1,7 +1,7 @@
 using EmployeeManager.Models;
 using System.Collections.Generic;
 
-namespace EmployeeManager.DAL
+namespace EmployeeManager.DataAccessLayer
 {
     public interface IEmployeeRepository
     {

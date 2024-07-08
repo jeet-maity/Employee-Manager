@@ -1,5 +1,6 @@
 ﻿using EmployeeManager.Messages;
-using EmployeeManager.Services;
+using EmployeeManager.ViewServices;
+using EmployeeManager.ApplicationServices;
 using Ninject.Modules;
 
 namespace EmployeeManager.Utility

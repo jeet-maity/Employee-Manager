@@ -1,7 +1,7 @@
 ﻿using EmployeeManager.Models;
 using System.Collections.Generic;
 
-namespace EmployeeManager.Services
+namespace EmployeeManager.ApplicationServices
 {
     public interface IEmployeeInfoService
     {

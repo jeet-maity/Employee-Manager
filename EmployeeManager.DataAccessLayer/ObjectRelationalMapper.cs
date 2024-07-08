@@ -3,7 +3,7 @@ using EmployeeManager.Models;
 using System;
 using System.Collections.Generic;
 
-namespace EmployeeManager.DAL
+namespace EmployeeManager.DataAccessLayer
 {
     static class ObjectRelationalMapper
     {

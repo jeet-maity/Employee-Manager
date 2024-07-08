@@ -7,8 +7,8 @@
     <ProjectGuid>{BEB461AC-A054-45C1-9022-04CE511FEEC6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EmployeeManager.DAL</RootNamespace>
-    <AssemblyName>EmployeeManager.DAL</AssemblyName>
+    <RootNamespace>EmployeeManager.DataAccessLayer</RootNamespace>
+    <AssemblyName>EmployeeManager.DataAccessLayer</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -45,9 +45,9 @@
       <Project>{D7177DA3-6952-435E-A00F-0DF50A0984EF}</Project>
       <Name>DataClient</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EmployeeManager.Models\EmployeeManager.Models.csproj">
+    <ProjectReference Include="..\EmployeeManager.Models\Models.csproj">
       <Project>{0D34073F-7D85-492C-AC19-06A747D5C9CA}</Project>
-      <Name>EmployeeManager.Models</Name>
+      <Name>Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Target Name="TidyUp" AfterTargets="BeforeBuild">

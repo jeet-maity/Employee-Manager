@@ -38,9 +38,6 @@
     <ApplicationIcon>simple.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FileHelpers, Version=3.4.2.0, Culture=neutral, PublicKeyToken=3e0c08d59cc3d657, processorArchitecture=MSIL">
-      <HintPath>..\packages\FileHelpers.3.4.2\lib\net45\FileHelpers.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -89,12 +86,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Services\DialogService.cs" />
-    <Compile Include="Services\EmployeeInfoService.cs" />
-    <Compile Include="Services\IDialogService.cs" />
-    <Compile Include="Services\IEmployeeInfoService.cs" />
-    <Compile Include="Utility\ApplicationServicesModule.cs" />
     <Compile Include="Utility\CustomCommand.cs" />
+    <Compile Include="ViewServices\DialogService.cs" />
+    <Compile Include="ViewServices\IDialogService.cs" />
+    <Compile Include="Utility\ApplicationServicesModule.cs" />
     <Compile Include="Utility\DataServicesModule.cs" />
     <Compile Include="Utility\Helpers.cs" />
     <Compile Include="Utility\IEnumerableExtensions.cs" />
@@ -153,17 +148,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EmployeeManager.DAL\EmployeeManager.DAL.csproj">
+    <ProjectReference Include="..\EmployeeManager.ApplicationServices\ApplicationServices.csproj">
+      <Project>{49e3e694-9dde-4465-93ad-a8849ec4879b}</Project>
+      <Name>ApplicationServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmployeeManager.DataAccessLayer\DataAccessLayer.csproj">
       <Project>{beb461ac-a054-45c1-9022-04ce511feec6}</Project>
-      <Name>EmployeeManager.DAL</Name>
+      <Name>DataAccessLayer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EmployeeManager.Infra\EmployeeManager.Infra.csproj">
+    <ProjectReference Include="..\EmployeeManager.InfrastructureServices\InfrastructureServices.csproj">
       <Project>{46F370B7-F74E-48DA-B573-6F1911529EEB}</Project>
-      <Name>EmployeeManager.Infra</Name>
+      <Name>InfrastructureServices</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EmployeeManager.Models\EmployeeManager.Models.csproj">
+    <ProjectReference Include="..\EmployeeManager.Models\Models.csproj">
       <Project>{0D34073F-7D85-492C-AC19-06A747D5C9CA}</Project>
-      <Name>EmployeeManager.Models</Name>
+      <Name>Models</Name>
     </ProjectReference>
     <ProjectReference Include="..\DataClient\DataClient.csproj">
       <Project>{D7177DA3-6952-435E-A00F-0DF50A0984EF}</Project>

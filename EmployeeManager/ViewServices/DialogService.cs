@@ -2,7 +2,7 @@
 using Ninject;
 using System.Windows;
 
-namespace EmployeeManager.Services
+namespace EmployeeManager.ViewServices
 {
     public class DialogService : IDialogService
     {

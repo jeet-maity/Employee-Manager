@@ -5,9 +5,9 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManager", "EmployeeManager\EmployeeManager.csproj", "{D6E6896D-52CA-4141-97B7-24F3CAA81D48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManager.Models", "EmployeeManager.Models\EmployeeManager.Models.csproj", "{0D34073F-7D85-492C-AC19-06A747D5C9CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "EmployeeManager.Models\Models.csproj", "{0D34073F-7D85-492C-AC19-06A747D5C9CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManager.DAL", "EmployeeManager.DAL\EmployeeManager.DAL.csproj", "{BEB461AC-A054-45C1-9022-04CE511FEEC6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "EmployeeManager.DataAccessLayer\DataAccessLayer.csproj", "{BEB461AC-A054-45C1-9022-04CE511FEEC6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataClient", "DataClient\DataClient.csproj", "{D7177DA3-6952-435E-A00F-0DF50A0984EF}"
 EndProject
@@ -17,11 +17,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManager.Infra", "EmployeeManager.Infra\EmployeeManager.Infra.csproj", "{46F370B7-F74E-48DA-B573-6F1911529EEB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfrastructureServices", "EmployeeManager.InfrastructureServices\InfrastructureServices.csproj", "{46F370B7-F74E-48DA-B573-6F1911529EEB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManager.Infra.Tests", "EmployeeManager.Infra.Tests\EmployeeManager.Infra.Tests.csproj", "{BEF49D51-4DF8-436D-9244-706C7AA3FE31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfrastructureServices.Tests", "EmployeeManager.InfrastructureServices.Tests\InfrastructureServices.Tests.csproj", "{BEF49D51-4DF8-436D-9244-706C7AA3FE31}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataClient.Tests", "DataClient.Tests\DataClient.Tests.csproj", "{9BB98141-D587-4BB5-853E-E8675561E18A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationServices", "EmployeeManager.ApplicationServices\ApplicationServices.csproj", "{49E3E694-9DDE-4465-93AD-A8849EC4879B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{9BB98141-D587-4BB5-853E-E8675561E18A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BB98141-D587-4BB5-853E-E8675561E18A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BB98141-D587-4BB5-853E-E8675561E18A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49E3E694-9DDE-4465-93AD-A8849EC4879B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49E3E694-9DDE-4465-93AD-A8849EC4879B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49E3E694-9DDE-4465-93AD-A8849EC4879B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49E3E694-9DDE-4465-93AD-A8849EC4879B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
