@@ -1,8 +1,8 @@
 ﻿using DataClient;
-using EmployeeManager.Models;
+using Models;
 using System.Collections.Generic;
 
-namespace EmployeeManager.DataAccessLayer
+namespace DataAccessLayer
 {
     public class EmployeeRepository : IEmployeeRepository
     {

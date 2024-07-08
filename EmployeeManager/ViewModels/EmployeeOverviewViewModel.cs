@@ -1,6 +1,6 @@
 ﻿using EmployeeManager.Messages;
-using EmployeeManager.Models;
-using EmployeeManager.ApplicationServices;
+using Models;
+using ApplicationServices;
 using EmployeeManager.ViewServices;
 using EmployeeManager.Utility;
 using Microsoft.Toolkit.Mvvm.Messaging;

@@ -1,15 +1,14 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("EmployeeManager.Infra")]
+[assembly: AssemblyTitle("Models")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("EmployeeManager.Infra")]
+[assembly: AssemblyProduct("Models")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("46f370b7-f74e-48da-b573-6f1911529eeb")]
+[assembly: Guid("0d34073f-7d85-492c-ac19-06a747d5c9ca")]
 
 // Version information for an assembly consists of the following four values:
 //

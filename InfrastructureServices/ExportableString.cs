@@ -2,7 +2,7 @@
 using System.Data;
 using System.Runtime.InteropServices.ComTypes;
 
-namespace EmployeeManager.Infra.Tests
+namespace InfrastructureServices
 {
     public class ExportableString : Exportable
     {

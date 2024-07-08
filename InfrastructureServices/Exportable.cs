@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using FileHelpers;
 
-namespace EmployeeManager.Infra
+namespace InfrastructureServices
 {
     [DelimitedRecord("|")]
     [IgnoreEmptyLines]

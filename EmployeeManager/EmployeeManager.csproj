@@ -148,19 +148,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EmployeeManager.ApplicationServices\ApplicationServices.csproj">
+    <ProjectReference Include="..\ApplicationServices\ApplicationServices.csproj">
       <Project>{49e3e694-9dde-4465-93ad-a8849ec4879b}</Project>
       <Name>ApplicationServices</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EmployeeManager.DataAccessLayer\DataAccessLayer.csproj">
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
       <Project>{beb461ac-a054-45c1-9022-04ce511feec6}</Project>
       <Name>DataAccessLayer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EmployeeManager.InfrastructureServices\InfrastructureServices.csproj">
+    <ProjectReference Include="..\InfrastructureServices\InfrastructureServices.csproj">
       <Project>{46F370B7-F74E-48DA-B573-6F1911529EEB}</Project>
       <Name>InfrastructureServices</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EmployeeManager.Models\Models.csproj">
+    <ProjectReference Include="..\Models\Models.csproj">
       <Project>{0D34073F-7D85-492C-AC19-06A747D5C9CA}</Project>
       <Name>Models</Name>
     </ProjectReference>

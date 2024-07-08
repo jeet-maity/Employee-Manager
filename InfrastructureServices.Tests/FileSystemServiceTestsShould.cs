@@ -4,8 +4,9 @@ using System.Collections.Generic;
 using System.IO;
 using Moq;
 using Xunit;
+using InfrastructureServices;
 
-namespace EmployeeManager.Infra.Tests
+namespace InfrastructureServices.Tests
 {
     public class FileSystemServiceTestsShould
     {

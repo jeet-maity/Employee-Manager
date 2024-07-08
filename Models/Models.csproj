@@ -7,8 +7,8 @@
     <ProjectGuid>{0D34073F-7D85-492C-AC19-06A747D5C9CA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EmployeeManager.Models</RootNamespace>
-    <AssemblyName>EmployeeManager.Models</AssemblyName>
+    <RootNamespace>Models</RootNamespace>
+    <AssemblyName>Models</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -45,7 +45,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EmployeeManager.InfrastructureServices\InfrastructureServices.csproj">
+    <ProjectReference Include="..\InfrastructureServices\InfrastructureServices.csproj">
       <Project>{46F370B7-F74E-48DA-B573-6F1911529EEB}</Project>
       <Name>InfrastructureServices</Name>
     </ProjectReference>

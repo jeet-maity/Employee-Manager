@@ -1,4 +1,4 @@
-﻿using EmployeeManager.DataAccessLayer;
+﻿using DataAccessLayer;
 using Ninject.Modules;
 
 namespace EmployeeManager.Utility
