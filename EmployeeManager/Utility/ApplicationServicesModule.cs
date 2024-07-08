@@ -1,5 +1,4 @@
-﻿using EmployeeManager.Messages;
-using EmployeeManager.ViewServices;
+﻿using EmployeeManager.ViewServices;
 using ApplicationServices;
 using Ninject.Modules;
 
@@ -17,7 +16,6 @@ namespace EmployeeManager.Utility
             Bind<IEmployeeInfoService>().To<EmployeeInfoService>();
             Bind<IDialogService>().To<DialogService>();
             Bind<ViewModelLocator>().ToSelf().InSingletonScope();
-            Bind<UpdateEmployeeListMessage>().ToSelf().InTransientScope();
         }
     }
 }

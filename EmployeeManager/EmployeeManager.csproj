@@ -87,6 +87,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Utility\CustomCommand.cs" />
+    <Compile Include="Utility\MessagesModule.cs" />
     <Compile Include="ViewServices\DialogService.cs" />
     <Compile Include="ViewServices\IDialogService.cs" />
     <Compile Include="Utility\ApplicationServicesModule.cs" />
@@ -120,7 +121,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Messages\UpdateEmployeeListMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -159,6 +159,10 @@
     <ProjectReference Include="..\InfrastructureServices\InfrastructureServices.csproj">
       <Project>{46F370B7-F74E-48DA-B573-6F1911529EEB}</Project>
       <Name>InfrastructureServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Messages\Messages.csproj">
+      <Project>{688616c5-3057-49f5-87aa-f9e4d2035cdb}</Project>
+      <Name>Messages</Name>
     </ProjectReference>
     <ProjectReference Include="..\Models\Models.csproj">
       <Project>{0D34073F-7D85-492C-AC19-06A747D5C9CA}</Project>

@@ -1,4 +1,4 @@
-﻿using EmployeeManager.Messages;
+﻿using Messages;
 using Models;
 using ApplicationServices;
 using EmployeeManager.ViewServices;
@@ -12,6 +12,7 @@ using System.IO;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Windows.Input;
+using Ninject;
 
 namespace EmployeeManager.ViewModels
 {
@@ -30,7 +31,7 @@ namespace EmployeeManager.ViewModels
         {
             this.employeeInfoService = employeeInfoService;
             this.dialogService = dialogService;
-            WeakReferenceMessenger.Default.Register<UpdateEmployeeListMessage>(this, OnUpdateEmployeeListMessageReceived);
+            WeakReferenceMessenger.Default.Register<IUpdateEmployeeListMessage>(this, OnUpdateEmployeeListMessageReceived);
 
             LoadEmployeeData();
             InitializeCommands();
@@ -73,14 +74,16 @@ namespace EmployeeManager.ViewModels
         }
         private void EditEmployee(object obj)
         {
-            WeakReferenceMessenger.Default.Send(new UpdateEmployeeListMessage(new List<Employee> { SelectedEmployee }));
+            var updatedEmployeesMessage = App.Ioc.Get<IUpdateEmployeeListMessage>();
+            updatedEmployeesMessage.UpdatedEmployees.Add(SelectedEmployee);
+            WeakReferenceMessenger.Default.Send(updatedEmployeesMessage);
         }
 
-        private string GetUpdateStatistics(UpdateEmployeeListMessage message)
+        private string GetUpdateStatistics(IUpdateEmployeeListMessage message)
         {
             StringBuilder buffer = new StringBuilder();
-            buffer.AppendLine($" Updated : {message.Updated.Count}");
-            foreach (Employee employee in message.Updated)
+            buffer.AppendLine($" Updated : {message.UpdatedEmployees.Count}");
+            foreach (Employee employee in message.UpdatedEmployees)
             {
                 buffer.AppendLine($"    {employee.Name}");
             }
@@ -88,9 +91,8 @@ namespace EmployeeManager.ViewModels
             return buffer.ToString();
         }
 
-        private void OnUpdateEmployeeListMessageReceived(object recipient, UpdateEmployeeListMessage message)
+        private void OnUpdateEmployeeListMessageReceived(object recipient, IUpdateEmployeeListMessage message)
         {
-            LoadEmployeeData();
             dialogService.CloseDialog();
             dialogService.ShowPopUp(GetUpdateStatistics(message));
         }
