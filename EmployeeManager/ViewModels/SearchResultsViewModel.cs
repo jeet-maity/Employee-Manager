@@ -1,5 +1,6 @@
-﻿using EmployeeManager.Models;
-using EmployeeManager.Services;
+﻿using Models;
+using EmployeeManager.ViewServices;
+using ApplicationServices;
 using EmployeeManager.Utility;
 using System.Collections.ObjectModel;
 using System.ComponentModel;

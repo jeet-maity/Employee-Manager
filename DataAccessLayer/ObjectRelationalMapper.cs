@@ -1,9 +1,9 @@
 ﻿using DataClient;
-using EmployeeManager.Models;
+using Models;
 using System;
 using System.Collections.Generic;
 
-namespace EmployeeManager.DAL
+namespace DataAccessLayer
 {
     static class ObjectRelationalMapper
     {

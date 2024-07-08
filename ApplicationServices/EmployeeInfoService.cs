@@ -1,12 +1,12 @@
-﻿using EmployeeManager.DAL;
-using EmployeeManager.Infra;
-using EmployeeManager.Models;
+﻿using DataAccessLayer;
+using InfrastructureServices;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace EmployeeManager.Services
+namespace ApplicationServices
 {
     public class EmployeeInfoService : IEmployeeInfoService
     {

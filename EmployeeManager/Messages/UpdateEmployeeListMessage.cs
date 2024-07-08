@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using EmployeeManager.Models;
+using Models;
 
 namespace EmployeeManager.Messages
 {

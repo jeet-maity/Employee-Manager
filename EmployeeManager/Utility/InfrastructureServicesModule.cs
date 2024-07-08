@@ -1,4 +1,4 @@
-﻿using EmployeeManager.Infra;
+﻿using InfrastructureServices;
 using Ninject.Modules;
 using System;
 using System.Collections.Generic;

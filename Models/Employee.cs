@@ -1,9 +1,9 @@
-using EmployeeManager.Infra;
+using InfrastructureServices;
 using FileHelpers;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace EmployeeManager.Models
+namespace Models
 {
     public class Employee : Exportable, INotifyPropertyChanged
     {
