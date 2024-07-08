@@ -25,6 +25,7 @@ namespace EmployeeManager
                     new RepositoriesModule(),
                     new ApplicationServicesModule(),
                     new InfrastructureServicesModule(),
+                    new MessagesModule(),
                     new ViewModelsModule(),
                     new ViewsModule()
                 };
